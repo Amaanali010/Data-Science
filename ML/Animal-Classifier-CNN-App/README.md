@@ -1,7 +1,9 @@
 # 🐾 Animal Classification Using CNN (Final Student Guide – Kaggle Notebook)
 
 
-🔗 **Live App:** https://huggingface.co/spaces/Amaanali01/Animal-Classifier-MobileNetV2-Model
+🔗 **Live App:** https://huggingface.co/spaces/Amaanali01/Animal-Classifier-CNN-App
+
+
 
 ## ✅ Expected Result
 - Validation accuracy: **60% – 80%**
