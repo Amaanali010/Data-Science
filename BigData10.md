@@ -24,26 +24,55 @@ Big Data refers to extremely large and complex datasets that cannot be processed
 
 ---
 
-    +----------------------+
-                           |         DATA         |
-                           +----------------------+
-                                     |
-    ----------------------------------------------------------------
-    |                              |                              |
+   ## Types of Data
 
-+--------------------+ +------------------------+ +----------------------------+
-| STRUCTURED | | SEMI-STRUCTURED | | UNSTRUCTURED |
-+--------------------+ +------------------------+ +----------------------------+
-| Tables | | XML | | Text Documents |
-| Databases | | JSON | | Images |
-| CSV Files | | Emails | | Audio |
-| Excel Sheets | | HTML | | Video |
-| SQL Databases | | Logs | | Social Media Posts |
-+--------------------+ +------------------------+ | PDFs |
-| Sensor Data |
-| Chat Messages |
-+----------------------------+
+### Data Classification Flowchart
 
+```mermaid
+flowchart TD
+    %% Main Title
+    A[All Data] 
+    
+    %% Main Branches
+    A --> B[Structured Data]
+    A --> C[Semi-Structured Data]
+    A --> D[Unstructured Data]
+
+    %% Structured Data Examples
+    B --> B1[Tables]
+    B --> B2[Relational Databases]
+    B --> B3[CSV Files]
+    B --> B4[Excel Sheets]
+    B --> B5[SQL Databases]
+
+    %% Semi-Structured Data Examples
+    C --> C1[XML]
+    C --> C2[JSON]
+    C --> C3[HTML]
+    C --> C4[Log Files]
+    C --> C5[Emails with Metadata]
+
+    %% Unstructured Data Examples
+    D --> D1[Text Documents]
+    D --> D2[Images]
+    D --> D3[Audio Files]
+    D --> D4[Video Files]
+    D --> D5[Social Media Posts]
+    D --> D6[PDFs]
+    D --> D7[Sensor Data]
+    D --> D8[Chat Messages]
+
+    %% Styling
+    classDef structured fill:#22c55e,stroke:#166534,color:#fff,stroke-width:2px
+    classDef semistructured fill:#3b82f6,stroke:#1e40af,color:#fff,stroke-width:2px
+    classDef unstructured fill:#ef4444,stroke:#991b1b,color:#fff,stroke-width:2px
+
+    class B,B1,B2,B3,B4,B5 structured
+    class C,C1,C2,C3,C4,C5 semistructured
+    class D,D1,D2,D3,D4,D5,D6,D7,D8 unstructured
+
+    %% Title Styling
+    style A fill:#1f2937,stroke:#fff,color:#fff,font-weight:bold
 ---
 
 
