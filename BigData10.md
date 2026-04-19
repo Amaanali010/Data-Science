@@ -24,26 +24,25 @@ Big Data refers to extremely large and complex datasets that cannot be processed
 
 ---
 
-
-+----------------------+
-                          |        DATA          |
-                          +----------------------+
-                                    |
-    ------------------------------------------------------------------
-    |                              |                                 |
+    +----------------------+
+                           |         DATA         |
+                           +----------------------+
+                                     |
+    ----------------------------------------------------------------
+    |                              |                              |
 
 +--------------------+ +------------------------+ +----------------------------+
 | STRUCTURED | | SEMI-STRUCTURED | | UNSTRUCTURED |
 +--------------------+ +------------------------+ +----------------------------+
-| - Tables | | - XML | | - Text Documents |
-| - Databases | | - JSON | | - Images |
-| - CSV Files | | - Emails | | - Audio |
-| - Excel Sheets | | - HTML | | - Video |
-| - SQL Data | | - Logs | | - Social Media Posts |
-+--------------------+ +------------------------+ | - PDFs |
-| - Sensor Data |
+| Tables | | XML | | Text Documents |
+| Databases | | JSON | | Images |
+| CSV Files | | Emails | | Audio |
+| Excel Sheets | | HTML | | Video |
+| SQL Databases | | Logs | | Social Media Posts |
++--------------------+ +------------------------+ | PDFs |
+| Sensor Data |
+| Chat Messages |
 +----------------------------+
-
 
 ---
 
