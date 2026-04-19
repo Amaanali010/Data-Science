@@ -24,6 +24,33 @@ Big Data refers to extremely large and complex datasets that cannot be processed
 
 ---
 
+```md id="fixed_bigdata_md"
+# Introduction to Big Data
+
+## What is Big Data?
+Big Data refers to extremely large and complex datasets that cannot be processed using traditional data management tools. It involves capturing, storing, processing, and analyzing data at scale.
+
+### Characteristics of Big Data (5 Vs)
+- **Volume**: Large amount of data (terabytes, petabytes, etc.)
+- **Velocity**: Speed at which data is generated and processed
+- **Variety**: Different forms of data (text, images, videos, etc.)
+- **Veracity**: Quality and reliability of data
+- **Value**: Useful insights derived from data
+
+---
+
+## Big Data vs Data Science vs Data Analytics
+
+| Aspect | Big Data | Data Science | Data Analytics |
+|--------|----------|--------------|----------------|
+| Definition | Handling massive datasets | Extracting knowledge using algorithms | Finding patterns in data |
+| Focus | Storage & processing | ML, statistics, modeling | Visualization & reporting |
+| Tools | Hadoop, Spark | Python, R, TensorFlow | Excel, SQL, Power BI |
+| Goal | Data management | Prediction & modeling | Decision making |
+| Skill Set | Engineering systems | Programming + stats | Analytical thinking |
+
+---
+
 ## Types of Data - Data Classification Flowchart
 
 ```mermaid
@@ -60,7 +87,6 @@ flowchart TD
     class B,B1,B2,B3,B4,B5 structured;
     class C,C1,C2,C3,C4 semistructured;
     class D,D1,D2,D3,D4,D5,D6,D7 unstructured;
-
 
 --- 
 
