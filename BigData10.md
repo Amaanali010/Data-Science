@@ -24,23 +24,28 @@ Big Data refers to extremely large and complex datasets that cannot be processed
 
 ---
 
-## Types of Data (Flow Chart)
 
-                       +------------------+
-               |       Data       |
-               +------------------+
-                         |
-                         | | |
-
-+--------------+ +-------------------+ +----------------------+
-| Structured | | Semi-Structured | | Unstructured |
-+--------------+ +-------------------+ +----------------------+
-| Tables | | XML | | Text documents |
-| Databases | | JSON | | Images |
-| CSV files | | Emails | | Audio |
-+--------------+ +-------------------+ | Video |
-| Social media posts |
 +----------------------+
+                          |        DATA          |
+                          +----------------------+
+                                    |
+    ------------------------------------------------------------------
+    |                              |                                 |
+
++--------------------+ +------------------------+ +----------------------------+
+| STRUCTURED | | SEMI-STRUCTURED | | UNSTRUCTURED |
++--------------------+ +------------------------+ +----------------------------+
+| - Tables | | - XML | | - Text Documents |
+| - Databases | | - JSON | | - Images |
+| - CSV Files | | - Emails | | - Audio |
+| - Excel Sheets | | - HTML | | - Video |
+| - SQL Data | | - Logs | | - Social Media Posts |
++--------------------+ +------------------------+ | - PDFs |
+| - Sensor Data |
++----------------------------+
+
+
+---
 
 
 --- 
