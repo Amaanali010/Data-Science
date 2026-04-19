@@ -53,16 +53,15 @@ flowchart TD
     D --> D6[PDFs]
     D --> D7[Sensor Data]
 
-    %% Styling
-    classDef structured fill:#22c55e,stroke:#166534,color:#ffffff,stroke-width:2px;
-    classDef semistructured fill:#3b82f6,stroke:#1e40af,color:#ffffff,stroke-width:2px;
-    classDef unstructured fill:#ef4444,stroke:#991b1b,color:#ffffff,stroke-width:2px;
+    classDef structured fill:#22c55e,stroke:#166534,color:#ffffff;
+    classDef semistructured fill:#3b82f6,stroke:#1e40af,color:#ffffff;
+    classDef unstructured fill:#ef4444,stroke:#991b1b,color:#ffffff;
 
     class B,B1,B2,B3,B4,B5 structured;
     class C,C1,C2,C3,C4 semistructured;
     class D,D1,D2,D3,D4,D5,D6,D7 unstructured;
 
-    style A fill:#111827,stroke:#ffffff,color:#ffffff,font-weight:bold
+    style A fill:#111827,stroke:#ffffff,color:#ffffff,font-weight:bold;
 
 
 --- 
