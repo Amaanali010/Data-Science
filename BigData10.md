@@ -14,17 +14,17 @@ Big Data refers to extremely large and complex datasets that cannot be processed
 
 ## Big Data vs Data Science vs Data Analytics
 
-| Aspect        | Big Data                                      | Data Science                                      | Data Analytics                                  |
-|--------------|-----------------------------------------------|--------------------------------------------------|------------------------------------------------|
-| Definition    | Handling massive datasets                     | Extracting knowledge using algorithms            | Examining data to find patterns                |
-| Focus         | Storage, processing, distributed systems      | Machine learning, statistics, modeling           | Reporting, dashboards, visualization           |
-| Tools         | Hadoop, Spark                                | Python, R, TensorFlow, Scikit-learn             | Excel, SQL, Power BI, Tableau                  |
-| Goal          | Efficient data management                     | Prediction and intelligent systems               | Business insights and decision making          |
-| Skill Set     | Engineering and infrastructure                | Programming + statistics                         | Analytical thinking                            |
+| Aspect | Big Data | Data Science | Data Analytics |
+|--------|----------|--------------|----------------|
+| Definition | Handling massive datasets | Extracting knowledge using algorithms | Finding patterns in data |
+| Focus | Storage & processing | ML, statistics, modeling | Visualization & reporting |
+| Tools | Hadoop, Spark | Python, R, TensorFlow | Excel, SQL, Power BI |
+| Goal | Data management | Prediction & modeling | Decision making |
+| Skill Set | Engineering systems | Programming + stats | Analytical thinking |
 
 ---
 
-   ## Types of Data - Data Classification Flowchart
+## Types of Data - Data Classification Flowchart
 
 ```mermaid
 flowchart TD
