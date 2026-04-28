@@ -1,5 +1,9 @@
-🚀 Dog Breed Classification using MobileNetV3
-📌 STEP 1 — Import Libraries
+# 🚀 Dog Breed Classification using MobileNetV3
+
+---
+
+## 📌 STEP 1 — Import Libraries
+```python
 import os
 import numpy as np
 import matplotlib.pyplot as plt
@@ -18,8 +22,8 @@ print("Total Classes:", len(os.listdir(dataset_path)))
 
 ✔ Expected Output: 120 classes
 
-📌 STEP 3 — Data Generators (CRITICAL FIX)
-✅ Training Generator (with augmentation)
+📌 STEP 3 — Data Generators
+✅ Training Generator
 train_datagen = ImageDataGenerator(
     preprocessing_function=preprocess_input,
     validation_split=0.2,
@@ -27,12 +31,12 @@ train_datagen = ImageDataGenerator(
     zoom_range=0.2,
     horizontal_flip=True
 )
-✅ Validation Generator (NO augmentation + shuffle OFF)
+✅ Validation Generator
 val_datagen = ImageDataGenerator(
     preprocessing_function=preprocess_input,
     validation_split=0.2
 )
-📌 STEP 4 — Load Dataset (IMPORTANT SETTINGS)
+📌 STEP 4 — Load Dataset
 train_data = train_datagen.flow_from_directory(
     dataset_path,
     target_size=(224,224),
@@ -47,7 +51,7 @@ val_data = val_datagen.flow_from_directory(
     batch_size=32,
     class_mode="categorical",
     subset="validation",
-    shuffle=False   # 🔥 VERY IMPORTANT
+    shuffle=False
 )
 📌 STEP 5 — Save Labels
 pickle.dump(train_data.class_indices, open("labels.pkl","wb"))
@@ -57,12 +61,10 @@ base_model = MobileNetV3Small(
     include_top=False,
     weights="imagenet"
 )
-📌 STEP 7 — Fine-Tuning (MOST IMPORTANT STEP)
-# Freeze early layers
+📌 STEP 7 — Fine-Tuning
 for layer in base_model.layers[:-30]:
     layer.trainable = False
 
-# Train last layers
 for layer in base_model.layers[-30:]:
     layer.trainable = True
 📌 STEP 8 — Build Model
@@ -81,15 +83,12 @@ model.compile(
     loss="categorical_crossentropy",
     metrics=["accuracy"]
 )
-📌 STEP 10 — Train Model (NO EarlyStopping for Debug)
+📌 STEP 10 — Train Model
 history = model.fit(
     train_data,
     validation_data=val_data,
     epochs=10
 )
-
-👉 IMPORTANT: Do NOT use EarlyStopping yet
-
 📌 STEP 11 — Plot Accuracy
 plt.plot(history.history["accuracy"])
 plt.plot(history.history["val_accuracy"])
@@ -137,43 +136,28 @@ Epoch	Validation Accuracy
 🧠 Key Concepts
 🔹 Pretrained Model
 MobileNetV3Small(weights="imagenet")
-
-A model already trained on large datasets like ImageNet.
-
 🔹 Transfer Learning
-
-Reuse learned features (edges, shapes, textures) for a new task.
-
-✔ Faster training
-✔ Better accuracy
-✔ Less data required
-
+Faster training
+Better accuracy
+Less data required
 🔹 Fine-Tuning
 for layer in base_model.layers[:-30]:
     layer.trainable = False
 
 for layer in base_model.layers[-30:]:
     layer.trainable = True
-
-✔ Early layers → General features
-✔ Last layers → Dog breed specialization
-
 🧠 How CNN Understands Images
-🔹 1. Edges (Early Layers)
-Lines, boundaries
-Example: dog outline
-🔹 2. Shapes (Middle Layers)
-Face, legs, structure
-🔹 3. Textures (Deep Layers)
-Fur patterns
-Breed-specific details
+🔹 Edges → Early Layers
+🔹 Shapes → Middle Layers
+🔹 Textures → Deep Layers
 🎯 Summary
 Layer Type	Learns
 Early	Edges
 Middle	Shapes
 Deep	Textures & Objects
 🚀 Next Steps
-✔ Build Gradio app
-✔ Deploy on Hugging Face Spaces
-✔ Share results (20% → 75% improvement)
+Build Gradio App
+Deploy on Hugging Face
+Share Results
 
+---
