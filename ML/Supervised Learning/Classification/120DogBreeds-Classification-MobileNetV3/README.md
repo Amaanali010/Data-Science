@@ -99,7 +99,6 @@ plt.xlabel("Epoch")
 plt.ylabel("Accuracy")
 
 plt.legend(["Train","Validation"])
-
 plt.show()
 📌 STEP 12 — Plot Loss
 plt.plot(history.history["loss"])
@@ -110,7 +109,6 @@ plt.xlabel("Epoch")
 plt.ylabel("Loss")
 
 plt.legend(["Train","Validation"])
-
 plt.show()
 📌 STEP 13 — Save Model
 model.save("dog_mobilenetv3.keras")
@@ -148,7 +146,7 @@ Reuse learned features (edges, shapes, textures) for a new task.
 
 ✔ Faster training
 ✔ Better accuracy
-✔ Less data needed
+✔ Less data required
 
 🔹 Fine-Tuning
 for layer in base_model.layers[:-30]:
@@ -175,7 +173,7 @@ Early	Edges
 Middle	Shapes
 Deep	Textures & Objects
 🚀 Next Steps
-
 ✔ Build Gradio app
 ✔ Deploy on Hugging Face Spaces
 ✔ Share results (20% → 75% improvement)
+
