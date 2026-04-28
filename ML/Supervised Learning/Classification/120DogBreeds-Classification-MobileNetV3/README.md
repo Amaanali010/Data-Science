@@ -65,7 +65,7 @@
 
 ## Option 1 — Train More
 ```python
-epochs = 15–20
+epochs = 10 -15
 
 👉 Expected:
 
