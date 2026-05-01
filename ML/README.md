@@ -79,7 +79,5 @@ flowchart TD
     RL --> RL3["Policy Gradient<br/>Best: Continuous actions<br/>Use: Robot control"]
     
     IC4 -.-> BEST1[Best Overall: ResNet50]
-
-
     OD1 -.-> BEST2[Best Real-time: YOLOv8]
     SG1 -.-> BEST3[Best Medical: U-Net]
