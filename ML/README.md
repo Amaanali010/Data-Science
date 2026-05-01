@@ -1,4 +1,4 @@
-# Machine Learning Flowchart
+flowchart TD
 
 A[Machine Learning] --> B[Supervised Learning]
 A --> C[Unsupervised Learning]
