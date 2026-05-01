@@ -1,6 +1,33 @@
-# Complete Machine Learning Guide: Flowcharts & Tables
+# COMPLETE MACHINE LEARNING GUIDE
+## Flowcharts, Tables, and Learning Paths
 
-## 📊 Main Flowchart: Complete ML Decision Tree
+**Author:** ML Guide
+**Version:** 1.0
+**Last Updated:** 2026
+
+---
+
+## TABLE OF CONTENTS
+
+1. [Main Flowchart: ML Decision Tree](#main-flowchart-ml-decision-tree)
+2. [Learning Path Flowchart](#learning-path-flowchart)
+3. [Table 1: Image Models by Difficulty](#table-1-image-models-by-difficulty)
+4. [Table 2: Tabular Data Models](#table-2-tabular-data-models)
+5. [Table 3: Text Data Models](#table-3-text-data-models)
+6. [Table 4: Time Series Models](#table-4-time-series-models)
+7. [Table 5: Unsupervised Learning Models](#table-5-unsupervised-learning-models)
+8. [Table 6: Reinforcement Learning Models](#table-6-reinforcement-learning-models)
+9. [Table 7: Quick Decision Guide](#table-7-quick-decision-guide-by-problem-type)
+10. [Table 8: Model Performance Comparison](#table-8-model-performance-comparison)
+11. [Table 9: Learning Roadmap](#table-9-learning-roadmap-time-estimates)
+12. [Table 10: Model Selection Checklist](#table-10-model-selection-checklist)
+13. [Summary Learning Path](#summary-your-complete-learning-path)
+14. [Python Code Examples](#python-code-examples)
+15. [Pro Tips & Resources](#pro-tips-for-beginners)
+
+---
+
+## MAIN FLOWCHART: ML DECISION TREE
 
 ```mermaid
 flowchart TD
