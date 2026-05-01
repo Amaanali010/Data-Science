@@ -1,25 +1,16 @@
-G2 --> H6[MobileNet]
+```mermaid
+flowchart TD
 
-H6 --> H61[MobileNetV1]
-H6 --> H62[MobileNetV2]
-H6 --> H63[MobileNetV3]
+A[Machine Learning] --> B[Supervised Learning]
+A --> C[Unsupervised Learning]
+A --> D[Reinforcement Learning]
 
-%% Unsupervised Learning
-C --> C1[Clustering]
-C --> C2[Dimensionality Reduction]
+B --> E[Regression]
+B --> F[Classification]
 
-C1 --> C11[K-Means]
-C1 --> C12[Hierarchical Clustering]
-C1 --> C13[DBSCAN]
+E --> E1[Linear Regression]
+E --> E2[Polynomial Regression]
 
-C2 --> C21[PCA]
-C2 --> C22[t-SNE]
-
-%% Reinforcement Learning
-D --> D1[Q-Learning]
-D --> D2[Deep Q Networks]
-D --> D3[Policy Gradient Methods]
-🔧 What was wrong (quickly)
-❌ Multiple arrows on one line
-❌ Comments mixed with code on same line
-❌ Missing line breaks
+F --> F1[Logistic Regression]
+F --> F2[Decision Tree Classifier]
+```
