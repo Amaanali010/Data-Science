@@ -1,8 +1,5 @@
 # Machine Learning Flowchart
 
-```mermaid
-flowchart TD
-
 A[Machine Learning] --> B[Supervised Learning]
 A --> C[Unsupervised Learning]
 A --> D[Reinforcement Learning]
@@ -14,7 +11,7 @@ B --> F[Classification]
 %% Regression Branch
 E --> E1[Linear Regression]
 E --> E2[Polynomial Regression]
-E --> E3[Ridge & Lasso Regression]
+E --> E3[Ridge and Lasso Regression]
 E --> E4[Decision Tree Regressor]
 E --> E5[Random Forest Regressor]
 E --> E6[Neural Networks for Regression]
@@ -33,9 +30,9 @@ F7 --> G[Deep Learning]
 E6 --> G
 
 %% Deep Learning Types
-G --> G1[Artificial Neural Network (ANN)]
-G --> G2[Convolutional Neural Network (CNN)]
-G --> G3[Recurrent Neural Network (RNN)]
+G --> G1[Artificial Neural Network - ANN]
+G --> G2[Convolutional Neural Network - CNN]
+G --> G3[Recurrent Neural Network - RNN]
 G --> G4[Transformers]
 
 %% CNN Variants
@@ -45,6 +42,7 @@ G2 --> H3[VGG]
 G2 --> H4[ResNet]
 G2 --> H5[Inception]
 G2 --> H6[MobileNet]
+
 H6 --> H61[MobileNetV1]
 H6 --> H62[MobileNetV2]
 H6 --> H63[MobileNetV3]
@@ -64,14 +62,3 @@ C2 --> C22[t-SNE]
 D --> D1[Q-Learning]
 D --> D2[Deep Q Networks]
 D --> D3[Policy Gradient Methods]
-
----
-
-### Quick explanation (so you don’t get confused)
-
-- **Linear Regression** → used for predicting numbers (price, age, etc.)
-- **Classification** → predicting categories (spam/not spam, cat/dog)
-- **CNN** → a type of **Deep Learning model**, mainly for images
-- **MobileNetV3** → a **lightweight CNN architecture**, optimized for mobile devices (it’s not a separate category, just a subtype of CNN)
-
----
