@@ -59,6 +59,8 @@ C2 --> C21[PCA]
 C2 --> C22[t-SNE]
 
 %% Reinforcement Learning
+
+```
 D --> D1[Q-Learning]
 D --> D2[Deep Q Networks]
 D --> D3[Policy Gradient Methods]
