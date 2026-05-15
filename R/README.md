@@ -196,16 +196,27 @@ R Console
 
 Used to execute commands directly.
 
+## Output
+
+```r
+[1] 30
+
+```
+11. Important Tools for R
+R Console
+
+Used to execute commands directly.
+
 RStudio
 
 RStudio is the most popular IDE for R programming.
 
-Features:
+Features
 Code editor
 Console
 Visualization panel
 Package manager
-Official Website:
+Official Website
 RStudio (Posit)
 12. Installing R
 Step 1: Install R
